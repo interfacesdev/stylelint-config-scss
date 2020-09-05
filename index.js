@@ -68,7 +68,13 @@ module.exports = {
         ignore: ['comments', 'imports'],
       },
     ],
-    'scss/double-slash-comment-empty-line-before': 'always',
+    'scss/double-slash-comment-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested'],
+        ignore: ['between-comments', 'stylelint-commands'],
+      },
+    ],
     'scss/double-slash-comment-whitespace-inside': 'always',
     'scss/no-duplicate-dollar-variables': [
       true,

@@ -6,12 +6,13 @@ const config = require('..');
 const validScss = fs.readFileSync('./__tests__/scss-valid.scss', 'utf-8');
 const invalidScss = fs.readFileSync('./__tests__/scss-invalid.scss', 'utf-8');
 
-describe('valid css', () => {
+describe('valid scss', () => {
   let result;
 
   beforeEach(() => {
     result = stylelint.lint({
       code: validScss,
+      syntax: 'scss',
       config,
     });
   });
@@ -21,12 +22,13 @@ describe('valid css', () => {
   it('flags no warnings', () => result.then((data) => expect(data.results[0].warnings).toHaveLength(0)));
 });
 
-describe('invalid css', () => {
+describe('invalid scss', () => {
   let result;
 
   beforeEach(() => {
     result = stylelint.lint({
       code: invalidScss,
+      syntax: 'scss',
       config,
     });
   });

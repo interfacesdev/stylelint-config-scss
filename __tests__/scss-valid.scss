@@ -1,5 +1,19 @@
 $color: #fff !default;
 
+@mixin foo {
+  background: black;
+}
+
 .foo {
-  color: $color;
+  color: $color; // Comment
+}
+
+// Comment
+// Comment
+.bar {
+  @include foo;
+
+  &__baz {
+    color: red;
+  }
 }
