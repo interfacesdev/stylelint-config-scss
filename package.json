@@ -1,6 +1,6 @@
 {
   "name": "@interfacesdev/stylelint-config-scss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shareable SCSS config for stylelint",
   "keywords": [
     "stylelint",
