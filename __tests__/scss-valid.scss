@@ -1,5 +1,9 @@
 $color-primary: #fff !default;
-$color-secondary: #000;
+$color-secondary: #000; // comment
+
+$color-success: green; /* comment */
+$color-warning: orange;
+$color-danger: red;
 
 @mixin foo {
   background: black;

@@ -44,19 +44,8 @@ module.exports = {
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-colon-space-before': 'never',
     'scss/dollar-variable-default': null,
-    'scss/dollar-variable-empty-line-after': [
-      'always',
-      {
-        except: ['last-nested', 'before-dollar-variable'],
-      },
-    ],
-    'scss/dollar-variable-empty-line-before': [
-      'always',
-      {
-        except: ['first-nested', 'after-dollar-variable'],
-        ignore: ['after-comment'],
-      },
-    ],
+    'scss/dollar-variable-empty-line-after': null,
+    'scss/dollar-variable-empty-line-before': null,
     'scss/dollar-variable-first-in-block': [
       true,
       {
