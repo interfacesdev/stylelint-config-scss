@@ -43,12 +43,7 @@ module.exports = {
     'scss/dollar-variable-colon-newline-after': 'always-multi-line',
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-colon-space-before': 'never',
-    'scss/dollar-variable-default': [
-      true,
-      {
-        ignore: 'local',
-      },
-    ],
+    'scss/dollar-variable-default': null,
     'scss/dollar-variable-empty-line-after': [
       'always',
       {

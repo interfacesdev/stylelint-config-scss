@@ -1,11 +1,12 @@
-$color: #fff !default;
+$color-primary: #fff !default;
+$color-secondary: #000;
 
 @mixin foo {
   background: black;
 }
 
 .foo {
-  color: $color; // Comment
+  color: $color-primary; // Comment
 }
 
 // Comment
