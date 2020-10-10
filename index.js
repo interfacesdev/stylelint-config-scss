@@ -67,7 +67,7 @@ module.exports = {
       'always',
       {
         except: ['first-nested'],
-        ignore: ['between-comments', 'stylelint-commands'],
+        ignore: ['between-comments', 'stylelint-commands', 'inside-block'],
       },
     ],
     'scss/double-slash-comment-whitespace-inside': 'always',

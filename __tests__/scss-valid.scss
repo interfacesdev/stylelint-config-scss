@@ -5,16 +5,33 @@ $color-secondary: #000;
   background: black;
 }
 
+// comment
 .foo {
-  color: $color-primary; // Comment
+  color: $color-primary; // comment
 }
 
-// Comment
-// Comment
+// comment
+// comment
 .bar {
   @include foo;
 
+  // comment
   &__baz {
     color: red;
   }
+}
+
+// comment
+
+.xyz {
+  color: $color-primary;
+}
+
+/* comment */
+
+.qux {
+  background: black;
+  // comment
+  color: white;
+  font-size: 14px;
 }
