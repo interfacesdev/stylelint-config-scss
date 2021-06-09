@@ -25,6 +25,36 @@ module.exports = {
       },
     ],
     'no-invalid-double-slash-comments': null,
+
+    'order/order': [
+      {
+        type: 'at-rule',
+        name: 'use',
+      },
+      'dollar-variables',
+      'custom-properties',
+      {
+        type: 'at-rule',
+        name: 'mixin',
+      },
+      {
+        type: 'at-rule',
+        name: 'extend',
+      },
+      {
+        type: 'at-rule',
+        name: 'include',
+      },
+      'declarations',
+      'rules',
+      'at-rules',
+      {
+        type: 'at-rule',
+        name: 'include',
+        hasBlock: true,
+      },
+    ],
+
     'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
     'scss/at-else-closing-brace-space-after': 'always-intermediate',
     'scss/at-else-empty-line-before': 'never',
@@ -50,6 +80,7 @@ module.exports = {
       true,
       {
         ignore: ['comments', 'imports'],
+        except: ['root', 'function'],
       },
     ],
     'scss/double-slash-comment-empty-line-before': [
